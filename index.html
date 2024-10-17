@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/css/plan.css">
+</head>
+<style>
+    input[type=button]{
+        text-align: center;
+        padding: 10px;
+        margin-left: 50%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+</style>
+<body>
+    <div class="cabecera">
+        <div style="width: 50%; margin: auto;">
+            <div style="float: left;">
+                Venta De licencias
+            </div>
+            <div style="float: right; padding: 10px">
+                Atencion: 75224770@certus.edu.pe
+                <br>
+                Celular: 947223133
+            </div>
+            <div>
+                <img src="img/Banner 1.png" width="100%" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="cuerpo">
+        <div id="barra">
+            <p style="text-align: center; margin-bottom: 30px;">Menú Principal</p>
+            <ul>
+                <li><a href="#" onclick="mostrarPag('pagina1')">Iniciar Sesion</a></li>
+                <li><a href="#" onclick="mostrarPag('pagina2')">Instalar</a></li>
+                <li><a href="#" onclick="mostrarPag('pagina3')">Categorias</a></li>
+                <li><a href="#" onclick="mostrarPag('pagina4')">Tu Tienda</a></li>
+            </ul>
+        </div>
+        <div id="contenido">
+            <div id="pagina1" class="pag active">
+                <img src="img/Logo.png" alt="">
+                <h1>Iniciar Sesion</h1>
+                <table>
+                    <tr>
+                        <td>Usuario</td>
+                        <td>
+                            <input type="text" name="" id="Usuario">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Contraseña</td>
+                        <td><input type="text" name="" id="Contraseña"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="button" onclick="ingresar();" value="Ingresar">
+                        </td>
+                </table>
+            </div>
+            <div id="pagina2" class="pag">
+                <a href="https://www.youtube.com/watch?v=GtL1huin9EE"><input type="button"  value="Descargar" onclick="Descargar();"></a>
+            </div>
+            <div id="pagina3" class="pag">
+                <h1>Categorias</h1>
+                <table>
+                    <tr>
+                        <td>Aventura</td>
+                        <td><img src="img/Juego Aventura.png" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td>Accion</td>
+                        <td><img src="img/Accion.png" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td>Exploracion</td>
+                        <td><img src="img/Exploracion.png" alt=""></td>
+                    </tr>
+                </table>
+            </div>
+            <div id="pagina4" class="pag">
+                <h1>Tus Recomendados</h1>
+                <table>
+                    <tr>
+                        <td>Aventura</td>
+                        <td><img src="img/RECOMENDAD1.jpg" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td>Accion</td>
+                        <td><img src="img/terraria.png" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td>Exploracion</td>
+                        <td><img src="img/PZ2.jpg" alt=""></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="pie">
+                <div style="width: 100%;">
+                    <div style="text-align: center;">
+                        autor: Jose Rodrigo Huamannahui Robles <br>
+                        Instituto CERTUS | Carreras técnicas y Educacion continua
+                    </div>
+                </div>
+            </div>
+            <script src="js/funciones.js"></script>
+        </div>
+    </div>
+</body>
+</html>
